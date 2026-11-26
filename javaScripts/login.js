@@ -18,11 +18,11 @@ formulario.addEventListener("submit", (event) => {
 const botaoSenha = document.querySelector("#botaoSenha");
 
 botaoSenha.addEventListener("click", () => {
-    if (inputSenha.type === "password") {
-        inputSenha.type = "text";
+    if (senha.type === "password") {
+        senha.type = "text";
         botaoSenha.textContent = "Ocultar";
     } else {
-        inputSenha.type = "password";
+        senha.type = "password";
         botaoSenha.textContent = "Ver";
     }
 });
