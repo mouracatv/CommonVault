@@ -1,0 +1,184 @@
+/* --------------------------------------------------------------- */
+/* CORPO DO SITE */
+
+body {
+            background-color: #1e1e1e;
+            min-height: 100vh;
+            margin: 0;
+            padding: 36px 16px 24px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+/* --------------------------------------------------------------- */
+/* TÍTULO */
+
+h1 {
+    color: white;
+    font-size: 58px;
+    margin: 0 0 11px 0;
+    padding: 6px 20px;
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/* --------------------------------------------------------------- */
+/* FORMS */
+
+form {
+    border-radius: 15px;
+    padding: 32px;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    background-color: #878f96;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+form input[type="email"], 
+form input[type="password"],
+form input[type="tel"],
+form input[type="text"],
+form input[type="submit"]{
+    width: 100%;
+    padding: 15px;
+    padding-right: 85px;
+    background-color: #222222;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 19px;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+form label[for="login"],
+form label[for="senha"],
+form label[for="nome"],
+form label[for="telefone"] {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+form label[for="senha"],
+form label[for="confirma"],
+form label[for="telefone"],
+form label[for="login"] {
+    margin-top: 18px;
+}
+
+form > label:first-of-type {
+    margin-top: 0;
+}
+
+form button[type="submit"], form input[type="submit"] {
+    width: 55%;
+    padding: 18px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 12px;
+    font-size: 23px;
+    cursor: pointer;
+    align-self: center;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* --------------------------------------------------------------- */
+/* PSEUDOCLASSES */
+
+.cadastro {
+    background-color: #d1d5db;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000000;
+}
+
+.cadastro:hover {
+    background-color: #222222;
+    color: #d1d5db; 
+    transition: 0.3s;
+}
+
+.recuperarSenha {
+    color: #000;
+    font-size: 20px;
+    margin: 18px 0;
+}
+
+.recuperarSenha:hover {
+    color: #d1d5db;
+    transition: 0.3s;
+}
+
+.captcha {
+    font-size: 20px;
+}
+
+.captcha:hover {
+    color: #d1d5db;
+    transition: 0.3s;
+}
+
+.botao {
+    background-color: #d1d5db;
+}
+
+.botao:hover {
+    background-color: #222222;
+    color: #d1d5db; 
+    transition: 0.3s;
+}
+
+.campo-senha {
+    position: relative;
+    width: 100%;
+}
+
+#botaoSenha {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #d1d5db;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#botaoSenha:hover {
+    color: #222222;
+    background-color: #d1d5db;
+    transition: 0.3s;
+}
+
+/* --------------------------------------------------------------- */
+/* MEDIA QUERY */
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 72px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    form {
+        padding: 35px 24px;
+    }
+}    

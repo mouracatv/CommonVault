@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CommonVault - Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+
+    <a href="telaCadastro.html" class="cadastro">Cadastrar-se</a>
+
+    <h1>CommonVault</h1>
+
+    <form id="formLogin">
+        <label for="login">Login:</label>
+        <input type="email" id="login" placeholder="Digite seu email..." required>
+
+        <label for="senha">Senha:</label>
+        <div class="campo-senha">
+            <input type="password" id="senha" placeholder="Digite sua senha..." required>
+            <button type="button" id="botaoSenha">Ver</button>
+        </div>
+
+        <a href="telaSenhaEsquecida.html" class="recuperarSenha">Esqueci a senha</a>
+
+        <div class="captcha">
+            <input type="checkbox" id="confirma" required> 
+            <label for="confirma">Não sou um robô</label>
+        </div>
+        
+        <button type="submit" class="botao">Entrar</button>
+    </form>
+
+    <script src="javaScripts/login.js" defer></script>
+</body>
+</html>
